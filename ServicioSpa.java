@@ -1,3 +1,7 @@
+import java.util.Scanner;
+
+import java.util.Scanner;
+
 
 public class ServicioSpa {
     
@@ -6,11 +10,17 @@ public class ServicioSpa {
     private double Precio;
 
     // METODOS
-    public void setDescripcion (String descripcion) {
-       Descripcion = descripcion;
+    public void setDescripcion () { 
+       Scanner entrada = new Scanner(System.in) ;
+       System.out.println("Ingrese Descripcion: ");
+       String descri = entrada.next();
+       Descripcion = descri;
     }
-    public void setPrecio (double precio) {
-        Precio = precio;
+    public void setPrecio () { 
+       Scanner entrada = new Scanner(System.in) ;
+       System.out.println("Ingrese Precio: $ ");
+       double prec = entrada.nextDouble();
+       Precio = prec;
     }
     public String getDescripcion() {
         return Descripcion;

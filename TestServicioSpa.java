@@ -5,10 +5,14 @@ public class TestServicioSpa {
         ServicioSpa servicioSpa1 = new ServicioSpa();
         ServicioSpa servicioSpa2 = new ServicioSpa();
         // se intancian los objetos
-        servicioSpa1.setDescripcion("Facial");
-        servicioSpa1.setPrecio(150.20);
-        servicioSpa2.setDescripcion("Masaje");
-        servicioSpa2.setPrecio(340.00);
+        
+        System.out.println("Primer servicio");
+        servicioSpa1.setDescripcion(); 
+        servicioSpa1.setPrecio();
+
+        System.out.println("Segundo servicio");
+        servicioSpa2.setDescripcion(); 
+        servicioSpa2.setPrecio();
         // se muestran los valores
         System.out.println("Primer servicio");
         System.out.println(servicioSpa1.getDescripcion() + " " + servicioSpa1.getPrecio());
