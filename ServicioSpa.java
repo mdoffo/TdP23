@@ -1,9 +1,13 @@
 
 public class ServicioSpa {
+    
+    // ATRIBUTOS
     private String Descripcion;
     private double Precio;
+
+    // METODOS
     public void setDescripcion (String descripcion) {
-        Descripcion = descripcion;
+       Descripcion = descripcion;
     }
     public void setPrecio (double precio) {
         Precio = precio;
