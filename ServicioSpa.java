@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 import java.util.Scanner;
 
@@ -13,14 +12,16 @@ public class ServicioSpa {
     public void setDescripcion () { 
        Scanner entrada = new Scanner(System.in) ;
        System.out.println("Ingrese Descripcion: ");
-       String descri = entrada.next();
-       Descripcion = descri;
+       Descripcion = entrada.next();
+       
     }
     public void setPrecio () { 
        Scanner entrada = new Scanner(System.in) ;
        System.out.println("Ingrese Precio: $ ");
-       double prec = entrada.nextDouble();
-       Precio = prec;
+       String line = entrada.nextLine();
+
+       Precio = Double.parseDouble(line);
+       
     }
     public String getDescripcion() {
         return Descripcion;
