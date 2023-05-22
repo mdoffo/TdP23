@@ -17,8 +17,7 @@ public class TestServicioSpa2 {
         System.out.println("Ingrese Precio: ");
         String line = entrada.nextLine();
         precio = Double.parseDouble(line);
-        //ServicioSpa2 servicioSpaPrimero = new ServicioSpa2(descripcion, precio);
-        System.out.println(" Primer Servicio: "+ descripcion + " " + precio);
+        ServicioSpa2 servicioSpaPrimero = new ServicioSpa2(descripcion, precio);
 
         System.out.println("Segundo servicio");
         entrada = new Scanner(System.in) ;
@@ -28,12 +27,12 @@ public class TestServicioSpa2 {
         System.out.println("Ingrese Precio: ");
         line = entrada.nextLine();
         precio = Double.parseDouble(line);
-        //ServicioSpa2 servicioSpaSegundo = new ServicioSpa2(descripcion, precio); 
-        System.out.println(" Segundo Servicio: "+ descripcion + " " + precio);
-        // se muestran los valores
-        /*System.out.println("Primer servicio");
+        ServicioSpa2 servicioSpaSegundo = new ServicioSpa2(descripcion, precio);
+
+        // MESTRA SERVICIOS
+        System.out.println("Primer servicio");
         System.out.println(servicioSpaPrimero.getDescripcion() + " " + servicioSpaPrimero.getPrecio());
         System.out.println("Segundo servicio");
-        System.out.println(servicioSpaSegundo.getDescripcion() + " " + servicioSpaSegundo.getPrecio()); */
+        System.out.println(servicioSpaSegundo.getDescripcion() + " " + servicioSpaSegundo.getPrecio());
     }    
 }

@@ -18,8 +18,11 @@ public class ServicioSpa2 {
         return this.Precio;
     }
 
-    // CONSTRUCTOR
-    public void ServicioSpa2(String descripcion, double precio){
+    // CONSTRUCTORES
+    public ServicioSpa2(){
+
+    }
+    public ServicioSpa2(String descripcion, double precio){
         this.Descripcion = descripcion;
         this.Precio = precio;
     }
